@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Каталог шаблонов - Нердс</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+      <a href="index.html" aria-label="На главную страницу">
+        <img src="img/nerds-logo.svg" width="160" height="65" alt="">
+      </a>
+        <ul>
+          <li><a href="">Студия</a></li>
+          <li><a href="">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="">Контакты</a></li>
+        </ul>
+        <a href="">Корзина<img src="img/cart-icon.png" width="15" height="15" alt=""></a>
+      </nav>
+    </header>
+    <main>
+      <h1 class="visually-hidden">Каталог дизайн-студии Нердз</h1>
+      <p>Магазин готовых шаблонов</p>
+      <section>
+        <h2 class="visually-hidden">Фильтр шаблонов</h2>
+        <form action="ihttps://echo.htmlacademy.ru" method="get">
+          <fieldset>
+          <legend>Сетка:</legend>
+          <ul>
+            <li>
+            <input type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
+            <label for="filter-adaptive">Адаптивная</label>
+            </li>
+            <li>
+            <input type="radio" name="grid" value="fixed" id="filter-fixed">
+            <label for="filter-fixed">Фиксированная</label>
+            </li>
+            <li>
+            <input type="radio" name="grid" value="rubber" id="filter-rubber">
+            <label for="filter-rubber">Резиновая</label>
+            </li>
+          </ul>
+          </fieldset>
+          <ul>
+            <li>
+            <input type="checkbox" name="slaider" id="filter-slaider" checked>
+            <label for="filter-slaider">Слайдер</label>
+            </li>
+            <li>
+            <input type="checkbox" name="benefits block" id="filter-benefits-block">
+            <label for="filter-benefits-block">Блок преимуществ</label>
+            </li>
+            <li>
+            <input type="checkbox" name="News" id="filter-news" checked>
+            <label for="filter-news">Новости</label>
+            </li>
+            <li>
+            <input type="checkbox" name="gallery" id="filter-gallery">
+            <label for="filter-gallery">Галерея</label>
+            </li>
+            <li>
+            <input type="checkbox" name="basket" id="filter-basket">
+            <label for="filter-basket">Корзина</label>
+            </li>
+          </ul>
+          <fieldset>
+          <legend>Особенности:</legend>
+          </fieldset>
+        </form>
+        <button type="submit" name="Показать"></button>
+        </section>
+        <section>
+        <h2 class="visually-hidden">Список шаблонов</h2>
+        <ul>
+          <li>
+            <a href="">
+            <h3 class="visually-hidden">Седона</h3>
+            <img src="img/img-sedona-1.jpg" width="360" height="578" alt="Шаблон Седона">
+            </a>
+          </li>
+          <li>
+            <a href="">
+            <h3 class="visually-hidden">Пинк</h3>
+            <img src="img/img-pink-1.jpg" width="360" height="578" alt="Шаблон Пинк">
+            </a>
+          </li>
+          <li>
+            <a href="">
+            <h3 class="visually-hidden">Барбершоп</h3>
+            <img src="img/img-barbershop.jpg" width="360" height="578" alt="Шаблон Барбершоп">
+            </a>
+          </li>
+          <li>
+            <a href="">
+            <h3 class="visually-hidden">Мишка</h3>
+            <img src="img/img-mishka-1.jpg" width="360" height="578" alt="Шаблон Мишка">
+            </a>
+          </li>
+          <li>
+            <a href="">
+            <h3 class="visually-hidden">А плюс</h3>
+            <img src="img/img-aplus-1.jpg" width="360" height="578" alt="Шаблон А плюс">
+            </a>
+          </li>
+          <li>
+            <a href="">
+            <h3 class="visually-hidden">Кваст</h3>
+            <img src="img/img-kvast-1.jpg" width="360" height="578" alt="Шаблон Кваст">
+            </a>
+          </li>
+        </ul>
+        </section>
+    </main>
+    <footer>
+      <section>
+        <h2 class="visually-hidden">Как нас найти</h2>
+        <p>nerds design studio <br>
+          191186, Санкт-Петербург,<br>
+          ул. Б. Конюшенная, д. 19/8 <br>
+          тел. +7(812)275-75-75
+          <button type="button" name="Напишите нам"></button>
+          </p>
+
+          <form action="https://echo.htmlacademy.ru" method="post">
+          <p>Напишите нам</p>
+          <p>
+          <label for="appointment-name">Ваше имя</label>
+          <input id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
+          </p>
+          <p>
+            <label for="appointment-email">Ваш email</label>
+          <input id="appointment-email" type="email" name="email" placeholder="email@exampl.com">
+          </p>
+          <p>
+          <label for="appointment-text"></label>
+          <input id="appointment-text" type="text" name="text" placeholder="В свободной форме">
+          </p>
+          <button type="submit">Отправить</button>
+          </form>
+          <button type="button">Закрыть</button>
+
+      </section>
+
+      <section>
+        <h2 class="visually-hidden">Давайте дружить</h2>
+        <p> Давайте дружить, это выгодно!<br> Скидка 10% для друзей из социальных сетей.</p>
+        <nav>
+          <a href="" aria-label="Вконтанкте"><img src="img/vk-icon.svg" width="26" height="15" alt=""> </a>
+          <a href="" aria-label="Фейсбук"><img src="img/fb-icon.svg" width="12" height="22" alt=""> </a>
+          <a href="" aria-label="Инстаграмм"><img src="img/insta-icon.svg" width="21" height="21" alt=""> </a>
+        </nav>
+
+      </section>
+    </footer>
+  </body>
+</html>
