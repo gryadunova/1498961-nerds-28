@@ -66,9 +66,22 @@ img {
 .user-navigation a:hover,
 .site-navigation a:focus,
 .user-navigation a:focus {
-  color:var(--special-pink);
+  color: var(--special-pink);
 }
-
+.site-navigation a:active,
+.user-navigation a:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+.social-navigation a:hover {
+  background-color: var(--special-pink);
+}
+.social-navigation a:focus {
+  background-color: var(--special-pink-dark);
+}
+.social-navigation a:active {
+  background-color: var(--special-pink-extra);
+}
 
 /* Projects */
 .projects-list {
@@ -97,11 +110,33 @@ img {
    color: var(--basic-white);
    border-radius: 3px;
 }
+.Button-navigation a:focus,
+.Button-navigation a:hover {
+  background-color: var(--special-pink-dark);
+}
+.Button-navigation a:active {
+  background-color: var(--special-pink-extra);
+}
 .Button-green {
   background-color: var(--special-green);
 }
+.Button-green-navigation a:active {
+  background-color: var(--special-green-extra);
+}
+.Button-green-navigation a:focus,
+.Button-green-navigation a:hover {
+  background-color: var(--special-green-dark);
+}
+
 .Button-yellow {
   background-color: var(--special-yellow);
+}
+.Button-yellow-navigation a:focus,
+.Button-yellow-navigation a:hover {
+  background-color: var(--special-yellow-dark);
+}
+.Button-yellow-navigation a:active {
+  background-color: var(--special-yellow-extra);
 }
 .Button-catalog-show {
   margin-top: 40px;
@@ -141,10 +176,7 @@ img {
   background-color: var(--basic-gray-light);
   border-radius: 50%;
 }
-.social-link: hover,
-.social-link: focus{
-  color:var(--special-pink);
-}
+
 .social-icon-vk {
   font-size: 23px;
   text-align: center;
