@@ -1,9 +1,157 @@
-body {
-  padding: 50px 80px;
-  line-height: 1.4;
-	font-family: sans-serif;
+
+:root {
+  --basic-black: #000000;
+  --basic-gray: #EEEEEE;
+  --basic-gray-light:#E1E1E1;
+  --basic-white: #FFFFFF;
+
+  --special-pink: #FB565A;
+  --special-pink-dark:#E74246;
+  --special-pink-extra:#D7373B;
+  --special-green: #00CA74;
+  --special-green-dark: #00BC6C;
+  --special-green-extra:#00AA62;
+  --special-yellow: #EFC849;
+  --special-yellow-dark: #EAB534;
+  --special-yellow-extra: #E5A722;
 }
 
+body {
+  width: 1180px; /*вернутся позже*/
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--basic-black);
+  background-color: var(--basic-white)
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height:auto;
+}
+.main-hedder {
+  background-color: var(--basic-gray);
+}
+/* Main navigation*/
+.main-navigations a {
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.main-navigations ul {
+  list-style: none;
+}
+.site-navigation {
+  list-style: none;
+}
+.site-navigation a: not ([href]){
+  background-color: var(--basic-gray);
+}
+
+/* User navigation */
+.site-navigation a,
+.user-navigation a {
+  color: var(--basic-black);
+}
+.site-navigation a:hover,
+.user-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:focus {
+  color:var(--special-pink);
+}
+
+
+/* Projects */
+.projects-list {
+  list-style: none;
+}
+.projects-item {
+  text-align: left;
+}
+.project-item h3 {
+  front-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+}
+/* Button */
+.Button {
+   display: inline-block;
+   vertical-align: top;
+   font-size: 12px;
+   line-height: 18px;
+   padding: 10px 40px;
+   text-decoration: none;
+   text-transform: uppercase;
+   background-color: var(--special-pink);
+   color: var(--basic-white);
+   border-radius: 3px;
+}
+.Button-green {
+  background-color: var(--special-green);
+}
+.Button-yellow {
+  background-color: var(--special-yellow);
+}
+.Button-catalog-show {
+  margin-top: 40px;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 12px;
+  line-height: 18px;
+  padding: 10px 45px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: var(--basic-gray-light);
+  border-radius: 5px;
+  border: none;
+  outline: none;;
+}
+.footer-social {
+  text-align: center:
+}
+.footer-social ul {
+  list-style: none;
+}
+.footer-social h2 {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
+}
+/* sial-button*/
+
+.social-link {
+  display: inline-block;
+  margin-right: 30px;
+  width: 60px;
+  height: 60px;
+  line-height: 70px;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--basic-gray-light);
+  border-radius: 50%;
+}
+.social-link: hover,
+.social-link: focus{
+  color:var(--special-pink);
+}
+.social-icon-vk {
+  font-size: 23px;
+  text-align: center;
+  line-height: 60px;
+  vertical-align: baseline;
+
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -13,4 +161,13 @@ body {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+/* Filters */
+.filter legend {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+}
+.filter ul {
+  list-style: none;
 }

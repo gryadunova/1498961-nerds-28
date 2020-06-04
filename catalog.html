@@ -3,21 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог шаблонов - Нердс</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="normalize.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header>
-      <nav>
+    <header class="main-hedder">
+      <nav class="main-navigations">
       <a href="index.html" aria-label="На главную страницу">
         <img src="img/nerds-logo.svg" width="160" height="65" alt="">
       </a>
-        <ul>
+        <ul class="site-navigation">
           <li><a href="">Студия</a></li>
           <li><a href="">Клиенты</a></li>
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="">Контакты</a></li>
         </ul>
-        <a href="">Корзина<img src="img/cart-icon.png" width="15" height="15" alt=""></a>
+        <div class="user-navigation">
+          <a href="">Корзина<img src="img/cart-icon.png" width="15" height="15" alt=""></a>
+        </div>
       </nav>
     </header>
     <main>
@@ -27,7 +31,7 @@
       <p>Магазин готовых шаблонов</p>
       <section>
         <h2 class="visually-hidden">Фильтр шаблонов</h2>
-        <form action="ihttps://echo.htmlacademy.ru" method="get">
+        <form class="filter" action="ihttps://echo.htmlacademy.ru" method="get">
           <fieldset>
           <legend>Сетка:</legend>
           <ul>
@@ -70,7 +74,7 @@
             </li>
           </ul>
           </fieldset>
-          <button type="submit">Показать</button>
+          <button class="Button-catalog-show" type="submit">Показать</button>
         </form>
         </section>
         <section>
@@ -136,7 +140,7 @@
           <input id="appointment-email" type="email" name="email" placeholder="email@exampl.com">
           </p>
           <p>
-          <label for="appointment-text"></label>
+          <label for="appointment-text">Текст письма:</label>
           <input id="appointment-text" type="text" name="text" placeholder="В свободной форме">
           </p>
           <button type="submit">Отправить</button>
@@ -145,16 +149,17 @@
 
       </section>
 
-      <section>
-        <h2 class="visually-hidden">Давайте дружить</h2>
-        <p> Давайте дружить, это выгодно!<br> Скидка 10% для друзей из социальных сетей.</p>
-        <ul>
-          <li><a href="" aria-label="Вконтанкте">Вконтакте<img src="img/vk-icon.svg" width="26" height="15" alt=""> </a></li>
-          <li><a href="" aria-label="Фейсбук">Фейсбук<img src="img/fb-icon.svg" width="12" height="22" alt=""> </a></li>
-          <li><a href="" aria-label="Инстаграмм">Инстаграмм<img src="img/insta-icon.svg" width="21" height="21" alt=""> </a></li>
-        </ul>
-
-      </section>
+        <section class="footer-social">
+          <div class="">
+            <span> Давайте дружить, это выгодно!</span>
+            <p>Скидка 10% для друзей из социальных сетей.</p>
+          </div>
+          <ul>
+            <li><a href="" class="social-link" aria-label="Вконтанкте"><img src="img/vk-icon.svg" width="26" height="15" alt=""> </a></li>
+            <li><a href="" class="social-link" aria-label="Фейсбук"><img src="img/fb-icon.svg" width="12" height="22" alt=""> </a></li>
+            <li><a href="" class="social-link" aria-label="Инстаграмм"><img src="img/insta-icon.svg" width="21" height="21" alt=""> </a></li>
+          </ul>
+        </section>
     </footer>
   </body>
 </html>
