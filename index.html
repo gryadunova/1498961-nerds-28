@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Дизайн-студия Нердз из Краснодара</title>
@@ -7,12 +7,12 @@
     <link href="normalize.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page-body">
     <header class="main-hedder">
       <nav class="main-navigations">
-      <a>
-        <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нердз">
-      </a>
+        <a class="main-hedder-logo">
+          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нердз">
+        </a>
         <ul class="site-navigation">
           <li><a href="">Студия</a></li>
           <li><a href="">Клиенты</a></li>
@@ -20,7 +20,7 @@
           <li><a href="">Контакты</a></li>
         </ul>
         <div class="user-navigation">
-          <a href="">Корзина<img src="img/cart-icon.png" width="15" height="15" alt=""></a>
+          <a class="basket-link" href="">Корзина</a>
         </div>
       </nav>
     </header>
@@ -44,7 +44,7 @@
         </ul>
         <a href="">Узнать больше</a>
       </section>
-      <section>
+      <section class="Projects">
         <h2 class="visually-hidden">Проекты</h2>
         <ul class="projects-list">
           <li class="projects-item">
@@ -56,8 +56,7 @@
             <a href="" class="Button">Заказать</a>
             </div>
           </li>
-          <li>
-
+          <li class="projects-item">
             <h3>Приложения</h3>
             <p>Покорите топ 10 приложений в AppStore и Google Play</p>
             <img src="img/illustration-2-1.png" width="300" height="146" alt="Приложения">
@@ -65,7 +64,7 @@
             <a href="" class="Button Button-green">Заказать</a>
             </div>
           </li>
-          <li>
+          <li class="projects-item">
             <h3>Презентации</h3>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
             <img src="img/illustration-3-1.png" width="300" height="146" alt="Презентации">
@@ -122,7 +121,8 @@
           </ul>
         </section>
     </main>
-    <footer>
+    <footer class="main-footer">
+      <div class="container">
       <section>
         <h2 class="visually-hidden">Как нас найти</h2>
         <p>nerds design studio <br>
@@ -152,16 +152,18 @@
       </section>
 
       <section class="footer-social">
-        <div class="">
+        <div class="social-text">
           <span> Давайте дружить, это выгодно!</span>
           <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
+
         <ul class="social-navigation">
           <li><a href="" class="social-link" aria-label="Вконтанкте"><img src="img/vk-icon.svg" width="26" height="15" alt=""> </a></li>
           <li><a href="" class="social-link" aria-label="Фейсбук"><img src="img/fb-icon.svg" width="12" height="22" alt=""> </a></li>
           <li><a href="" class="social-link" aria-label="Инстаграмм"><img src="img/insta-icon.svg" width="21" height="21" alt=""> </a></li>
         </ul>
-      </section>
+        </div>
+    </div>
     </footer>
   </body>
 </html>

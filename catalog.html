@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Каталог шаблонов - Нердс</title>
@@ -7,28 +7,30 @@
     <link href="normalize.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page-body">
     <header class="main-hedder">
       <nav class="main-navigations">
-      <a href="index.html" aria-label="На главную страницу">
-        <img src="img/nerds-logo.svg" width="160" height="65" alt="">
-      </a>
+        <div class="catalog-logo">
+          <a href="index.html" aria-label="На главную страницу">
+            <img src="img/nerds-logo.svg" width="160" height="65" alt="">
+          </a>
+        </div>
         <ul class="site-navigation">
-          <li><a href="">Студия</a></li>
+          <li><a href="index.html">Студия</a></li>
           <li><a href="">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="">Магазин</a></li>
           <li><a href="">Контакты</a></li>
         </ul>
         <div class="user-navigation">
-          <a href="">Корзина<img src="img/cart-icon.png" width="15" height="15" alt=""></a>
+          <a class="basket-link" href="">Корзина</a>
         </div>
       </nav>
+      <h1>Магазин готовых шаблонов</h1>
     </header>
-    <main>
+    <main class="page-catalog">
       <h1 class="visually-hidden">
         Каталог дизайн-студии Нердз
       </h1>
-      <p>Магазин готовых шаблонов</p>
       <section>
         <h2 class="visually-hidden">Фильтр шаблонов</h2>
         <form class="filter" action="ihttps://echo.htmlacademy.ru" method="get">
@@ -77,40 +79,41 @@
           <button class="Button-catalog-show" type="submit">Показать</button>
         </form>
         </section>
-        <section>
+
+        <section class="catalog">
         <h2 class="visually-hidden">Список шаблонов</h2>
-        <ul>
-          <li>
+        <ul class="catalog-list">
+          <li class="catalog-item">
             <a href="">
             <h3 class="visually-hidden">Седона</h3>
             <img src="img/img-sedona-1.jpg" width="360" height="578" alt="Шаблон Седона">
             </a>
           </li>
-          <li>
+          <li class="catalog-item">
             <a href="">
             <h3 class="visually-hidden">Пинк</h3>
             <img src="img/img-pink-1.jpg" width="360" height="578" alt="Шаблон Пинк">
             </a>
           </li>
-          <li>
+          <li class="catalog-item">
             <a href="">
             <h3 class="visually-hidden">Барбершоп</h3>
             <img src="img/img-barbershop-1.jpg" width="360" height="578" alt="Шаблон Барбершоп">
             </a>
           </li>
-          <li>
+          <li class="catalog-item">
             <a href="">
             <h3 class="visually-hidden">Мишка</h3>
             <img src="img/img-mishka-1.jpg" width="360" height="578" alt="Шаблон Мишка">
             </a>
           </li>
-          <li>
+          <li class="catalog-item">
             <a href="">
             <h3 class="visually-hidden">А плюс</h3>
             <img src="img/img-aplus-1.jpg" width="360" height="578" alt="Шаблон А плюс">
             </a>
           </li>
-          <li>
+          <li class="catalog-item">
             <a href="">
             <h3 class="visually-hidden">Кваст</h3>
             <img src="img/img-kvast-1.jpg" width="360" height="578" alt="Шаблон Кваст">
@@ -150,7 +153,7 @@
       </section>
 
         <section class="footer-social">
-          <div class="">
+          <div class="social-text">
             <span> Давайте дружить, это выгодно!</span>
             <p>Скидка 10% для друзей из социальных сетей.</p>
           </div>
