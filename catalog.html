@@ -10,9 +10,9 @@
   <body class="page-body">
     <header class="main-hedder">
       <nav class="main-navigations">
-          <a class="catalog-logo" href="index.html" aria-label="На главную страницу">
-            <img src="img/nerds-logo.svg" width="160" height="65" alt="">
-          </a>
+        <a class="catalog-logo" href="index.html" aria-label="На главную страницу">
+          <img src="img/nerds-logo.svg" width="160" height="65" alt="">
+        </a>
         <ul class="site-navigation">
           <li><a href="index.html">Студия</a></li>
           <li><a href="">Клиенты</a></li>
@@ -33,87 +33,103 @@
         <h2 class="visually-hidden">Фильтр шаблонов</h2>
         <form action="ihttps://echo.htmlacademy.ru" method="get">
           <fieldset>
-          <legend>Сетка:</legend>
-          <ul>
-            <li>
-            <input type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
-            <label for="filter-adaptive">Адаптивная</label>
-            </li>
-            <li>
-            <input type="radio" name="grid" value="fixed" id="filter-fixed">
-            <label for="filter-fixed">Фиксированная</label>
-            </li>
-            <li>
-            <input type="radio" name="grid" value="rubber" id="filter-rubber">
-            <label for="filter-rubber">Резиновая</label>
-            </li>
-          </ul>
+            <legend>Стоимость:</legend>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                  <div class="toggle toggle-min" tabindex="0"></div>
+                  <div class="toggle toggle-max" tabindex="0"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price"> от <input type="number" name="min-price" value="0"></label>
+                <label class="max-price"> до <input type="number" name="max-price" value="15000"></label>
+              </div>
+            </div>
           </fieldset>
           <fieldset>
-          <legend>Особенности:</legend>
-          <ul>
-            <li>
-            <input type="checkbox" name="slaider" id="filter-slaider" checked>
-            <label for="filter-slaider">Слайдер</label>
-            </li>
-            <li>
-            <input type="checkbox" name="benefits block" id="filter-benefits-block">
-            <label for="filter-benefits-block">Блок преимуществ</label>
-            </li>
-            <li>
-            <input type="checkbox" name="News" id="filter-news" checked>
-            <label for="filter-news">Новости</label>
-            </li>
-            <li>
-            <input type="checkbox" name="gallery" id="filter-gallery">
-            <label for="filter-gallery">Галерея</label>
-            </li>
-            <li>
-            <input type="checkbox" name="basket" id="filter-basket">
-            <label for="filter-basket">Корзина</label>
-            </li>
-          </ul>
+            <legend>Сетка:</legend>
+              <ul>
+                <li class="filter-option filter-radio">
+                  <input class="visually-hidden filter-input-radio filter-input" type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
+                  <label for="filter-adaptive">Адаптивная</label>
+                </li>
+                <li class="filter-option filter-radio">
+                  <input class="visually-hidden filter-input-radio filter-input" type="radio" name="grid" value="fixed" id="filter-fixed">
+                  <label for="filter-fixed">Фиксированная</label>
+                </li>
+                <li class="filter-option filter-radio">
+                  <input class="visually-hidden filter-input-radio filter-input" type="radio" name="grid" value="rubber" id="filter-rubber">
+                  <label for="filter-rubber">Резиновая</label>
+                </li>
+              </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Особенности:</legend>
+              <ul>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="slaider" id="filter-slaider" checked>
+                  <label for="filter-slaider">Слайдер</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="benefits block" id="filter-benefits-block">
+                  <label for="filter-benefits-block">Блок преимуществ</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="News" id="filter-news" checked>
+                  <label for="filter-news">Новости</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="gallery" id="filter-gallery">
+                  <label for="filter-gallery">Галерея</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="basket" id="filter-basket">
+                  <label for="filter-basket">Корзина</label>
+                </li>
+              </ul>
           </fieldset>
           <button class="Button-catalog-show" type="submit">Показать</button>
         </form>
         </section>
         <section class="catalog">
         <h2 class="visually-hidden">Список шаблонов</h2>
-        <ul class="catalog-list">
+          <ul class="catalog-list">
+            <li class="catalog-item">
+              <a href="">
+                <h3 class="visually-hidden">Седона</h3>
+                <img src="img/img-sedona-1.jpg" width="360" height="578" alt="Шаблон Седона">
+              </a>
+            </li>
           <li class="catalog-item">
             <a href="">
-            <h3 class="visually-hidden">Седона</h3>
-            <img src="img/img-sedona-1.jpg" width="360" height="578" alt="Шаблон Седона">
+              <h3 class="visually-hidden">Пинк</h3>
+              <img src="img/img-pink-1.jpg" width="360" height="578" alt="Шаблон Пинк">
             </a>
           </li>
           <li class="catalog-item">
             <a href="">
-            <h3 class="visually-hidden">Пинк</h3>
-            <img src="img/img-pink-1.jpg" width="360" height="578" alt="Шаблон Пинк">
+              <h3 class="visually-hidden">Барбершоп</h3>
+              <img src="img/img-barbershop-1.jpg" width="360" height="578" alt="Шаблон Барбершоп">
             </a>
           </li>
           <li class="catalog-item">
             <a href="">
-            <h3 class="visually-hidden">Барбершоп</h3>
-            <img src="img/img-barbershop-1.jpg" width="360" height="578" alt="Шаблон Барбершоп">
+              <h3 class="visually-hidden">Мишка</h3>
+              <img src="img/img-mishka-1.jpg" width="360" height="578" alt="Шаблон Мишка">
             </a>
           </li>
           <li class="catalog-item">
             <a href="">
-            <h3 class="visually-hidden">Мишка</h3>
-            <img src="img/img-mishka-1.jpg" width="360" height="578" alt="Шаблон Мишка">
+              <h3 class="visually-hidden">А плюс</h3>
+              <img src="img/img-aplus-1.jpg" width="360" height="578" alt="Шаблон А плюс">
             </a>
           </li>
           <li class="catalog-item">
             <a href="">
-            <h3 class="visually-hidden">А плюс</h3>
-            <img src="img/img-aplus-1.jpg" width="360" height="578" alt="Шаблон А плюс">
-            </a>
-          </li>
-          <li class="catalog-item">
-            <a href="">
-            <h3 class="visually-hidden">Кваст</h3>
-            <img src="img/img-kvast-1.jpg" width="360" height="578" alt="Шаблон Кваст">
+              <h3 class="visually-hidden">Кваст</h3>
+              <img src="img/img-kvast-1.jpg" width="360" height="578" alt="Шаблон Кваст">
             </a>
           </li>
         </ul>
