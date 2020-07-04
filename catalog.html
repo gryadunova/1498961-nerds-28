@@ -9,7 +9,7 @@
   </head>
   <body class="page-body">
     <header class="main-hedder">
-      <div class="conteiner">
+      <div class="container">
         <nav class="main-navigations">
           <a class="catalog-logo" href="index.html" aria-label="На главную страницу">
             <img src="img/nerds-logo.svg" width="160" height="65" alt="">
@@ -28,10 +28,10 @@
     </header>
     <main>
       <h1 class="catalog-title">Магазин готовых шаблонов</h1>
-      <div class="conteiner">
+      <div class="container">
       <div class="page-catalog">
       <section class="filter">
-        <form action="ihttps://echo.htmlacademy.ru" method="get">
+        <form action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
             <legend>Стоимость:</legend>
             <div class="range-filter">
@@ -90,7 +90,7 @@
                 </li>
               </ul>
           </fieldset>
-          <button type="submit" class="Button-catalog-show">Показать</button>
+          <button class="Button-catalog-show Button" type="submit">Показать</button>
         </form>
         </section>
         <section class="catalog">
@@ -114,9 +114,9 @@
                 </a>
                 <div class="catalog-hover">
                   <div class="catalog-hover-wrp">
-                    <a class="catalog-title-icon" href="">Sedona</a>
+                    <a class="catalog-title-icon">Sedona</a>
                     <span class="catalog-discription">Информационный сайт для туристов</span>
-                    <button type="button" class="Button">9 900 руб.</button>
+                    <button type="button" class="Button Button-catalog-list">9 900 руб.</button>
                   </div>
                 </div>
             </li>
@@ -126,9 +126,9 @@
             </a>
             <div class="catalog-hover">
               <div class="catalog-hover-wrp">
-                <h3 class="catalog-title-icon">Pink App</h3>
+                <a class="catalog-title-icon">Pink App</a>
                 <span class="catalog-discription">Продуктовый лендинг приложения для iOS и Android</span>
-                <button type="button" class="Button-hover">9 900 руб.</button>
+                <button type="button" class="Button Button-catalog-list">9 900 руб.</button>
               </div>
             </div>
           </li>
@@ -138,9 +138,9 @@
             </a>
             <div class="catalog-hover">
               <div class="catalog-hover-wrp">
-                <h3 class="catalog-title-icon">Barbershop</h3>
+                <a class="catalog-title-icon">Barbershop</a>
                 <span class="catalog-discription">Сайт салона красоты. Для мужчин, да.</span>
-                <button type="button" class="Button-hover">9 900 руб.</button>
+                <button type="button" class="Button Button-catalog-list">9 900 руб.</button>
               </div>
             </div>
           </li>
@@ -150,9 +150,9 @@
             </a>
             <div class="catalog-hover">
               <div class="catalog-hover-wrp">
-                <h3 class="catalog-title-icon">MISHKA</h3>
-                <span class="catalog-discription">Интернет-магазин вязаных игрушек</span>
-                <button type="button" class="Button-hover">9 900 руб.</button>
+                <a class="catalog-title-icon">MISHKA</a>
+                <span class="catalog-discription">Интернет-магазин  вязаных игрушек</span>
+                <button type="button" class="Button Button-catalog-list">9 900 руб.</button>
               </div>
             </div>
           </li>
@@ -162,9 +162,9 @@
             </a>
             <div class="catalog-hover">
               <div class="catalog-hover-wrp">
-                <h3 class="catalog-title-icon">A Plus</h3>
+                <a class="catalog-title-icon">A Plus</a>
                 <span class="catalog-discription">Лендинг курсов повышения квалификации</span>
-                <button type="button" class="Button-hover">9 900 руб.</button>
+                <button type="button" class="Button Button-catalog-list">9 900 руб.</button>
               </div>
             </div>
           </li>
@@ -174,9 +174,9 @@
             </a>
             <div class="catalog-hover">
               <div class="catalog-hover-wrp">
-                <h3 class="catalog-title-icon">КВАСТ</h3>
+                <a class="catalog-title-icon">КВАСТ</a>
                 <span class="catalog-discription">Промо-сайт производителя крафтового кваса</span>
-                <button type="button" class="Button-hover">9 900 руб.</button>
+                <button type="button" class="Button Button-catalog-list">9 900 руб.</button>
               </div>
             </div>
           </li>
@@ -198,22 +198,21 @@
         </section>
       </div>
       </div>
-    </main>
-    <footer class="main-footer">
-      <div class="container">
       <section>
         <div class="map">
         <div class="contact">
         <h2 class="visually-hidden">Как нас найти</h2>
         <h3>NЁRDS DESIGN STUDIO</h3>
           <p>191186, Санкт-Петербург,<br>
-          ул. Б. Конюшенная, д. 19/8 <br>
+          ул. Б. Конюшенная, д. 19/8 <br></p>
           <p class="phone">тел. +7(812)275-75-75</p>
-          </p>
           <a href="" class="Button button-contact">Напишите нам</a>
          </div>
          </div>
       </section>
+    </main>
+    <footer class="main-footer">
+      <div class="container">
       <section class="footer-social">
         <div class="social-text">
           <span> Давайте дружить, это выгодно!</span>
@@ -225,7 +224,7 @@
           <li><a href="" class="social-link item-insta" aria-label="Инстаграмм"></a></li>
         </ul>
       </section>
-        </div>
+      </div>
     </footer>
     <div class="modal">
         <div class="modal-wrp">
@@ -244,5 +243,6 @@
           </form>
         </div>
      </div>
+     <script src="js/popup.js"></script>
   </body>
 </html>
