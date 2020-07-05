@@ -444,6 +444,9 @@ img {
   align-items: center;
 }
 /*partner*/
+.partner-section {
+  margin-bottom: 80px;
+}
 .partners {
   margin-top: 50px;
   display: flex;
@@ -453,6 +456,9 @@ img {
   padding-bottom: 30px;
   margin-bottom: 0;
   list-style: none;
+}
+.partner-link-border {
+  border-right: 2px 52px solid #eee;
 }
 .partner-link {
   margin-right: 30px;
@@ -468,12 +474,12 @@ img {
 .partner-link:active {
   opacity: 0.2;
 }
-.partners li {
+/*.partners li {
   border-right: 2px 52px solid #eee;
-}
-.partners li:last-child {
+}*/
+/*.partners li:last-child {
   border-right: none;
-}
+}*/
 /* Button */
 .Button {
    display: inline-block;
@@ -537,7 +543,7 @@ img {
 }
 .Button-catalog-show:focus,
 .Button-catalog-show:hover {
-  background-color: var(--basic-gray-extra);
+  background-color: #DFDFDF;
 }
 
 .Button-catalog-show:active {
@@ -560,26 +566,27 @@ img {
   display: grid;
   grid-template-columns: 1440px min-content min-content;
   position: relative;
-  margin-top: 83px;
+  margin-top: 25px;
 }
 .map {
   position: relative;
   height: 416px;
   background-image: url("../img/map.png");
-  margin-top: 80px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-top: 54px;
 }
 .contact {
-  position: absolute;
-  top: 54px;
-  left: 140px;
-  z-index: 10;
+  padding-bottom: 47px;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-top: 49px;
   width: 319px;
-  height: 308px;
   background: var(--basic-white);
   box-sizing: border-box;
 }
 .contact h3 {
-  margin-top: 49px;
+  margin: 0;
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
@@ -588,7 +595,6 @@ img {
 }
 .contact p {
   font-style: normal;
-  margin-left: 50px;
   margin-top: 23px;
   font-size: 16px;
   line-height: 18px;
@@ -601,11 +607,8 @@ img {
   color: #666;
 }
 .button-contact {
-  position: absolute;
-  left: 50px;
-  top: 187px;
   padding: 16px 44px;
-  margin-top: 25px;
+  margin-top: 35px;
   font-size: 16px;
   text-transform: uppercase;
   background-color: var(--special-pink);
@@ -871,7 +874,6 @@ input[type=checkbox]:checked + label::before {
   margin-top: 45px;
 }
 
-
 /*sort*/
 .catalog {
   margin-left: 140px;
@@ -884,7 +886,6 @@ input[type=checkbox]:checked + label::before {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  padding-bottom: 60px;
 }
 .sort-title {
   font-size: 18px;
@@ -965,7 +966,7 @@ input[type=checkbox]:checked + label::before {
 }
 .catalog-item {
   margin-right: 40px;
-  margin-bottom: 60px;
+  margin-top: 60px;
   position: relative;
 }
 .catalog-item::before {
@@ -1037,6 +1038,7 @@ input[type=checkbox]:checked + label::before {
   text-decoration: none;
   list-style: none;
   text-transform: uppercase;
+  cursor: pointer;
 }
 .catalog-title-icon:hover,
 .catalog-title-icon:focus {
@@ -1076,12 +1078,12 @@ input[type=checkbox]:checked + label::before {
 .pagination-list {
  display: block;
  padding-left: 0;
+ margin-top: 50px;
+ margin-bottom: 60px;
 }
 .pagination-item {
   display: inline-block;
-  box-sizing: border-box;
   vertical-align: top;
-  height: 50px;
   text-decoration: none;
   color: #2e2e2e;
   font-size: 16px;
@@ -1092,12 +1094,13 @@ input[type=checkbox]:checked + label::before {
 }
 .pagination-item:last-child {
   margin-right: 0;
+  padding-right: 65px;
+  padding-left: 65px;
 }
 
 .pagination-item a {
   display: block;
-  padding: 17px 20px;
-  border: 2px solid var(--basic-white);
+  padding: 13px 19px;
   color: var(--basic-black);
   background-color: var(--basic-gray);
   border-radius: 3px;
@@ -1105,17 +1108,18 @@ input[type=checkbox]:checked + label::before {
 }
 .pagination-item a:hover,
 .pagination-item a:focus{
-  background-color: var(--basic-gray-extra);
+  background-color: #DFDFDF;
 }
 .pagination-item a:active {
   background-color: #D5D5D5;
 }
 .pagination-item .page-active {
-  padding: 17px 20px;
+  padding: 13px 19px;
   border: 2px solid #f1f1f1;
   background-color: #fff;
   cursor: default;
 }
+
 /* Modal */
 .modal {
   position: fixed;
