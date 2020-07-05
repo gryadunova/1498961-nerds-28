@@ -4,6 +4,7 @@
   --basic-gray: #EEEEEE;
   --basic-gray-light:#E1E1E1;
   --basic-white: #FFFFFF;
+  --basic-gray-saturated:#C1C1C1;
 
   --special-pink: #FB565A;
   --special-pink-dark:#E74246;
@@ -166,7 +167,7 @@ img {
 }
 /* slaider */
 .slider {
-  background-color: #EEEEEE;
+  background-color: var(--basic-gray);
   position: relative;
   padding-bottom: 80px;
 }
@@ -179,7 +180,7 @@ img {
   margin-top: 0;
   padding: 0;
   list-style: none;
-  background-color: #EEEEEE;
+  background-color: var(--basic-gray);
 }
 .slaider-item {
   width: 440px;
@@ -203,9 +204,9 @@ img {
 .slide-current {
   display: flex;
 }
-.slider-controls .current {
+/*.slider-controls .current {
   background-color: #ffffff;
-}
+}*/
 .slider input[type=radio] {
   display: none;
 }
@@ -246,10 +247,7 @@ img {
 #btn-1:checked ~ .slider-dots-wrp .slider-dot[for="btn-1"],
 #btn-2:checked ~ .slider-dots-wrp .slider-dot[for="btn-2"],
 #btn-3:checked ~ .slider-dots-wrp .slider-dot[for="btn-3"] {
-  background: #c1c1c1;
-}
-.slider-dot-active {
-
+  background: var(--basic-gray-saturated);
 }
 
 .slide-wrapper-1 {
@@ -465,13 +463,17 @@ img {
 
 .partner-link:focus,
 .partner-link:hover {
- opacity: 1;
+  opacity: 1;
 }
 .partner-link:active {
-opacity: 0.2;
+  opacity: 0.2;
 }
-
-
+.partners li {
+  border-right: 2px 52px solid #eee;
+}
+.partners li:last-child {
+  border-right: none;
+}
 /* Button */
 .Button {
    display: inline-block;
@@ -527,18 +529,17 @@ opacity: 0.2;
   text-decoration: none;
   text-transform: uppercase;
   color: var(--basic-black);
-  background-color: #EEEEEE;
+  background-color: var(--basic-gray);
   border-radius: 5px;
   cursor: pointer;
   border: none;
   outline: none;
 }
-.Button-catalog-show:focus {
-  background-color: #DFDFDF;
-}
+.Button-catalog-show:focus,
 .Button-catalog-show:hover {
-  background-color: #DFDFDF;
+  background-color: var(--basic-gray-extra);
 }
+
 .Button-catalog-show:active {
   opacity: 0.4;
 }
@@ -564,7 +565,7 @@ opacity: 0.2;
 .map {
   position: relative;
   height: 416px;
-  background-image: url("../img/map-1.png");
+  background-image: url("../img/map.png");
   margin-top: 80px;
 }
 .contact {
@@ -598,7 +599,6 @@ opacity: 0.2;
   margin-top: 0px;
   margin-bottom: 0px;
   color: #666;
-  padding-top: 5px;
 }
 .button-contact {
   position: absolute;
@@ -614,7 +614,7 @@ opacity: 0.2;
   }
 .button-contact:hover,
 .button-contact:focus {
-  background-color: #E74246;
+  background-color: var(--special-pink-dark);
 }
 
 .button-contact:active {
@@ -685,6 +685,7 @@ opacity: 0.2;
   }
 
 .social-text p {
+  margin-top: 5px;
   margin-right: 20px;
   font-size: 16px;
   line-height: 22px;
@@ -883,7 +884,7 @@ input[type=checkbox]:checked + label::before {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-
+  padding-bottom: 60px;
 }
 .sort-title {
   font-size: 18px;
@@ -960,11 +961,11 @@ input[type=checkbox]:checked + label::before {
   flex-wrap: wrap;
   width: 900px;
   box-sizing: border-box;
-  margin-top: 65px;
+  margin-top: 15px;
 }
 .catalog-item {
   margin-right: 40px;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
   position: relative;
 }
 .catalog-item::before {
@@ -1062,29 +1063,32 @@ input[type=checkbox]:checked + label::before {
 .catalog-item-header {
   background-color: var(--basic-gray-light);
 }
-.Button-catalog-list:hover{
+.Button-catalog-list:hover,
+.Button-catalog-list:focus {
   background-color: #E74246;
 }
-.Button-catalog-list:focus{
-  background-color: #E74246;
-}
+
 .Button-catalog-list:active{
   background-color: #D7373B;
 
 }
 /* Pagination */
 .pagination-list {
- display: flex;
- flex-wrap: wrap;
- padding: 0;
+ display: block;
+ padding-left: 0;
 }
 .pagination-item {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  margin-left: 11px;
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
+  height: 50px;
+  text-decoration: none;
+  color: #2e2e2e;
+  font-size: 16px;
+  line-height: 18px;
+  background-color: #eee;
+  border-radius: 5%;
+  margin-right: 6px;
 }
 .pagination-item:last-child {
   margin-right: 0;
