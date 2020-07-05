@@ -449,20 +449,19 @@ img {
   margin-bottom: 80px;
 }
 .partners {
-  margin-top: 50px;
   display: flex;
   justify-content: space-between;
   column-gap: 20px;
   border-bottom: 2px solid #eee;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
+  padding-left: 35px;
   margin-bottom: 0;
   list-style: none;
 }
-.partner-link-border {
-  border-right: 2px 52px solid #eee;
-}
+
 .partner-link {
-  margin-right: 30px;
+  width: 280px;
+  margin-right: 70px;
   align-items: center;
   text-decoration: none;
   opacity: 0.2;
@@ -475,12 +474,25 @@ img {
 .partner-link:active {
   opacity: 0.2;
 }
-/*.partners li {
-  border-right: 2px 52px solid #eee;
-}*/
-/*.partners li:last-child {
-  border-right: none;
-}*/
+.partners-boreder::before {
+  position: relative;
+  top: 50px;
+  left: 248px;
+  display: block;
+  content: "";
+  width: 2px;
+  height: 52px;
+  background: var(--basic-gray);
+}
+.partners-border-none:before  {
+  position: relative;
+  top: 60px;
+  left: 240px;
+  display: block;
+  content: "";
+  width: 2px;
+  height: 52px;
+}
 /* Button */
 .Button {
    display: inline-block;
@@ -575,7 +587,7 @@ img {
   background-image: url("../img/map.png");
   background-repeat: no-repeat;
   background-size: 100%;
-  padding-top: 54px;
+  padding-top: 44px;
 }
 .contact {
   padding-bottom: 47px;
